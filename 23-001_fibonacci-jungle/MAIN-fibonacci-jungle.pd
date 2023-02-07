@@ -6,10 +6,10 @@
 #X floatatom 19 86 5 1 1000 1 - bpminit mstrbpm 24;
 #X obj 19 172 r mstrbpm;
 #X obj 109 508 catch~ all;
-#N canvas 32 25 350 398 preset 0;
+#N canvas 32 25 404 398 preset 0;
 #X obj 14 13 loadbang;
 #X text 77 12 Presets;
-#X msg 14 36 \; break1init symbol ./DNB_BREAK_79.wav \; break2init symbol ./DNB_BREAK_110.wav \; break3init symbol ./DNB_BREAK_115.wav \; sample1init symbol ./TerroristVoxHit.wav \; sample2init symbol ./WheelUpSignal.wav \; sample3init symbol ./ShapeBeeps.wav \; sample4init symbol ./MetalMentasm.wav \; sample5init symbol ./MySoundStretchVox.wav \; basenoteinit 40 \; gloscale 7 \; basstoginit 0 \; stabstoginit 0 \; breakstoginit 1 \; breaksampinit 1 \; bpminit 174 \; stab1ampinit 0.3 \; stab1pres 10 5 700 1 \; stab2ampinit 0.7 \; stab2pres 15 15 250 2 \; stab3ampinit 0.6 \; stab3pres 70 25 500 0 \; stab4ampinit 0.3 \; stab4pres 35 25 350 2 \;;
+#X msg 14 36 \; break1init symbol ./samples/DNB_BREAK_79.wav \; break2init symbol ./samples/DNB_BREAK_110.wav \; break3init symbol ./samples/DNB_BREAK_115.wav \; sample1init symbol ./samples/TerroristVoxHit.wav \; sample2init symbol ./samples/WheelUpSignal.wav \; sample3init symbol ./samples/ShapeBeeps.wav \; sample4init symbol ./samples/MetalMentasm.wav \; sample5init symbol ./samples/MySoundStretchVox.wav \; basenoteinit 40 \; gloscale 7 \; basstoginit 0 \; stabstoginit 0 \; breakstoginit 1 \; breaksampinit 1 \; bpminit 174 \; stab1ampinit 0.3 \; stab1pres 10 5 700 1 \; stab2ampinit 0.7 \; stab2pres 15 15 250 2 \; stab3ampinit 0.6 \; stab3pres 70 25 500 0 \; stab4ampinit 0.3 \; stab4pres 35 25 350 2 \;;
 #X connect 0 0 2 0;
 #X restore 19 19 pd preset;
 #X obj 19 508 catch~ left;
