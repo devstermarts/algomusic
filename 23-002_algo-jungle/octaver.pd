@@ -1,0 +1,17 @@
+#N canvas 208 233 198 234 12;
+#X obj 27 67 hradio 19 1 0 4 \$0-blipsoct \$0-blipsoctinit empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
+#X obj 20 192 outlet;
+#X text 27 87 +1;
+#X text 46 87 +2;
+#X text 65 87 +3;
+#X text 85 87 +4;
+#X obj 20 144 expr ($f1+1)*12;
+#X floatatom 20 168 5 0 0 0 - - - 0;
+#X obj 20 120 r \$0-blipsoct;
+#X obj 20 9 inlet;
+#X obj 20 33 s \$0-blipsoctinit;
+#X connect 6 0 7 0;
+#X connect 7 0 1 0;
+#X connect 8 0 6 0;
+#X connect 9 0 10 0;
+#X coords 0 -1 1 1 90 50 2 20 60;
